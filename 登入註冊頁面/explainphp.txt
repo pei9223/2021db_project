@@ -1,1 +1,12 @@
-
+error.php: 
+防呆裝置 沒錯誤才可以登入或註冊
+index.php:
+用來切換頁面
+login.php:
+登入頁面
+register.php:
+註冊頁面
+server.php:
+連接資料庫
+style.css:
+美化
