@@ -1,0 +1,3 @@
+connect.php:負責連線資料庫
+choose.php:詢問使用者要新增哪家餐廳
+all.php:讓使用者按下"新增"案件來新增紀錄
