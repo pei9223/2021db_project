@@ -3,20 +3,49 @@
     <head>
         <meta charset="UTF-8"> 
         <title>更改資料</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <center>
+        <div class="btn">
+            <h2><a href="main.php" style="color:white;">回首頁</a>&nbsp&nbsp&nbsp<br></h2>
+        </div>
+        <div class="header">
+  	        <h2>修改資料</h2>
+        </div>
         <form action = "<?php echo $_SERVER['PHP_SELF'];?>" method = "post">
-            您的帳號：<input type = "text" name = "id"><br>
-            新密碼：<input type = "text" name = "new_password"><br>
-            新名字：<input type = "text" name = "new_name"><br>
-            新身高：<input type = "text" name = "new_height"><br>
-            新體重：<input type = "text" name = "new_weight"><br>
-            <input type = "submit" value = "修改資料">
+            <div class="input-group">
+  		        <label>您的帳號：</label>
+  		        <input type="text" name="id" >
+  	        </div>
+            <div class="input-group">
+  		        <label>新密碼：</label>
+  		        <input type="text" name="new_password" >
+  	        </div>
+            <div class="input-group">
+  		        <label>新名字：</label>
+  		        <input type="text" name="new_name" >
+  	        </div>
+            <div class="input-group">
+  		        <label>新身高：</label>
+  		        <input type="text" name="new_height" >
+  	        </div>
+            <div class="input-group">
+  		        <label>新體重：</label>
+  		        <input type="text" name="new_weight" >
+  	        </div>
+            <div class="input-group">
+  		        <button type="submit" class="btn" name="alter">修改資料</button>
+  	        </div>
         </form>
 
         <?php
-        $con = new mysqli("localhost", "Stella", "hjnstella900604", "Stella");
+        $servername = "localhost";
+        $username = "pcsettingroot";
+        $password = "0816131";
+        $dbname = "2021_project";
+
+        $con = new mysqli($servername, $username, $password, $dbname);
         if ($con->connect_error){
             die ("資料庫連線失敗" .$con->connect_error);
         }
