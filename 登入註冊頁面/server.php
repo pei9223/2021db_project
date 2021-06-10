@@ -10,10 +10,16 @@ $password = "";
 $errors = array(); 
 
 // 連線到資料庫
-$db = mysqli_connect('localhost', 'trista', 'trista1217777', 'registration');
-if (!$db)
-{
-die("資料庫連線失敗" .$con->connect_error);
+$servername = "localhost";
+$username = "pcsettingroot";
+$password = "0816131";
+$dbname = "2021_project";
+                        
+// Create connection
+$db = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$db) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
 // REGISTER USER
@@ -60,7 +66,7 @@ if (isset($_POST['reg_user'])) {
   	mysqli_query($db, $query);
   	$_SESSION['id'] = $id;
   	$_SESSION['success'] = "恭喜成功註冊!";
-  	header('location: index.php');
+  	header('location: main.php');
   }
 }
 if (isset($_POST['login_user'])) {
@@ -85,7 +91,7 @@ if (isset($_POST['login_user'])) {
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['id'] = $id;
           $_SESSION['success'] = "恭喜成功登入!";
-          header('location: index.php');
+          header('location: main.php');
         }else {
             array_push($errors, "帳號/密碼錯誤");
         }
