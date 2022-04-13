@@ -3,8 +3,8 @@
 
 ---
 ## Spotlight Video
-{%youtube ucm_6d0FIS4 %}
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/ucm_6d0FIS4/0.jpg)]
 
 ---
 
