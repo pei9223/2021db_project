@@ -4,8 +4,7 @@
 ---
 ## Spotlight Video
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/ucm_6d0FIS4/0.jpg)]
-
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/ucm_6d0FIS4/0.jpg)](https://www.youtube.com/watch?v=ucm_6d0FIS4 "Spotlight Video")
 ---
 
 ## Application
