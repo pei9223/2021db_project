@@ -78,7 +78,7 @@ https://www.ga.nctu.edu.tw/general-division/rest/v-TmrI
 * **user_info：** 紀錄每個註冊的使用者的資料，包括帳號/密碼/名字/身高/體重
 * **營業時間：** 紀錄各餐廳的營業時間，以在使用者查詢時，提供有營業的餐廳結果
 * **消耗熱量：** 記錄各項運消耗熱量，利用熱量換算並推薦使用者適合的運動
-## Connection Between Database and Our Application
+### Connection Between Database and Our Application
 ![](https://i.imgur.com/w7ZL8rh.png)
 * 使用php獲取user request，並抓取資料庫中的data，再透過html將結果呈現於網頁上。
 * 使用XAMPP作為網頁伺服器架站的工具，安裝連線後，將php檔放進相應的根目錄中後，就能在本機進行測試和操作。
